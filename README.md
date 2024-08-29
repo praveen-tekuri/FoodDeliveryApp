@@ -7,6 +7,7 @@
     - installed parcel bundler
     - updated scripts in package.json to execute the application using npm start with parcel
 2. Installed react, react-dom packages and configured the application to render the UI
+3. Installed tailwindCSS, Created first AppLayout Component and applied tailwindCSS styles
 ### Commands
 - git clone branchName
 - cd branchName
@@ -14,3 +15,5 @@
 - npm init - initializes package.json
 - npm install -D parcel - gets parcel package into app
 - npm install react react-dom
+- npm install -D tailwindcss postcss
+- npx tailwindcss init
