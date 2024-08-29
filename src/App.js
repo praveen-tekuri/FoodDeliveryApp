@@ -1,16 +1,17 @@
 import ReactDOM from 'react-dom/client';
 import React from 'react';
+import Header from './Header';
 
-const AppLayout = () => {
+export const AppLayout = () => {
     return (
         <div className='mt-5'>
-            <h1 className='font-bold text-green-700 text-center'>AppLayout</h1>
+            <Header/>
         </div>
     )
 }
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<AppLayout/>);
+root.render(<React.StrictMode><AppLayout/></React.StrictMode>);
 
 // const heading = React.createElement('h1', {className: 'heading'}, 'React Food Delivery App');

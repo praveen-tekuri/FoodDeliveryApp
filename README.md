@@ -8,6 +8,12 @@
     - updated scripts in package.json to execute the application using npm start with parcel
 2. Installed react, react-dom packages and configured the application to render the UI
 3. Installed tailwindCSS, Created first AppLayout Component and applied tailwindCSS styles
+4. Installed testing libraries
+    - React testing library
+    - jest and other required libraries
+    - configuration
+    - created first component
+    - unit testing -> Header component
 ### Commands
 - git clone branchName
 - cd branchName
@@ -17,3 +23,23 @@
 - npm install react react-dom
 - npm install -D tailwindcss postcss
 - npx tailwindcss init
+- npm i -D @testing-library/react @testing-library/dom
+- npm install -D jest
+- npm init jest@latest
+- npm install --D babel-jest @babel/core @babel/preset-env
+- npm install --D @babel/preset-react
+- npm i -D jest-environment-jsdom
+- npm i -D @testing-library/jest-dom
+### Sources
+**Testing**
+- [tailwindCSS](https://tailwindcss.com/docs/guides/parcel)
+- [RTL](https://testing-library.com/docs/react-testing-library/intro)
+- [jest](https://jestjs.io/docs/getting-started)
+- [Babel-preset-react](https://babeljs.io/docs/babel-preset-react)
+- [disable Babel transpilation in parcel](https://parceljs.org/languages/javascript/)
+- [jest-environment-jsdom](https://jestjs.io/docs/next/tutorial-jquery)
+- [jest-dom](https://testing-library.com/docs/ecosystem-jest-dom/)
+
+
+
+
