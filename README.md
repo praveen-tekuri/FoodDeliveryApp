@@ -14,6 +14,7 @@
     - configuration
     - created first component
     - unit testing -> Header component
+5. Routing Installation & configuration
 ### Commands
 - git clone branchName
 - cd branchName
@@ -30,6 +31,7 @@
 - npm install --D @babel/preset-react
 - npm i -D jest-environment-jsdom
 - npm i -D @testing-library/jest-dom
+- npm i react-router-dom
 ### Sources
 **Testing**
 - [tailwindCSS](https://tailwindcss.com/docs/guides/parcel)
