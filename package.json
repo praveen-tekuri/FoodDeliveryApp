@@ -1,0 +1,15 @@
+{
+  "name": "food-delivery-app",
+  "version": "1.0.0",
+  "description": "git clone branchName\r cd branchName\r git checkout - branchName (creates a new branch and switching to it)",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Praveen",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
