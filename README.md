@@ -44,7 +44,11 @@
     - shimmer UI
     - ternary operator (? :)
 8. Login -> Logout (useState)
-
+9. Search functionality
+    - fitler
+    - input -> value, onChange()
+    - button -> onClick -> filter and update
+    - fitleredList 
 ### Commands
 - git clone branchName
 - cd branchName
