@@ -49,6 +49,11 @@
     - input -> value, onChange()
     - button -> onClick -> filter and update
     - fitleredList 
+10. Dynamic routing (path='/restaurants/:resId')
+    - Product API
+    - useParams hook
+    - Link
+
 ### Commands
 - git clone branchName
 - cd branchName

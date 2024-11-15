@@ -7,6 +7,7 @@ import About from './components/About';
 import Error from './components/Error';
 import Footer from './components/Footer';
 import Restaurant from './components/RestaurantCard';
+import RestaurantMenu from './components/RestaurantMenu';
 
 export const AppLayout = () => {
     return (
@@ -18,6 +19,7 @@ export const AppLayout = () => {
                             <Route path='/' element={<Home/>}/>
                             <Route path='./rest' element={<Restaurant/>}/>
                             <Route path='/about' element={<About/>}/>
+                            <Route path='/restaurants/:resId' element={<RestaurantMenu/>}/>
                             <Route path='*' element={<Error/>}/>
                         </Routes>
                    </div>
