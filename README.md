@@ -15,6 +15,13 @@
     - created first component
     - unit testing -> Header component
 5. Routing Installation & configuration
+### 15112024
+1. Displaying the restaurant cards with hardcoded data
+    - props
+    - destructuring
+    - optional chaining (?)
+    - concatenation (cloudinary img)
+    - unique keys
 ### Commands
 - git clone branchName
 - cd branchName

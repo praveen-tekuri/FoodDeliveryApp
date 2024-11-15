@@ -32,3 +32,14 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<React.StrictMode><AppLayout/></React.StrictMode>);
 
 // const heading = React.createElement('h1', {className: 'heading'}, 'React Food Delivery App');
+
+/**
+ * Header
+ *  - logo
+ *  - nav items
+ * Body
+ *  - Search
+ *  - Restaurant
+ * Footer
+ * 
+ */
