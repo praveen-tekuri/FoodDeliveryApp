@@ -22,6 +22,19 @@
     - optional chaining (?)
     - concatenation (cloudinary img)
     - unique keys
+2. File Structure
+    - components
+        - RestaurantCard.js
+    - utils
+        - constants.js (CDN_URL, LOGO_URL)
+        - mockData.js (hardcoded restaurant data)
+3. imports & exports
+    - default exports
+    - named exports
+4. functionality
+    - filter (avgRating > 4.5)
+        - useState hook
+5. diff & reconciliation algorithm, react fiber
 ### Commands
 - git clone branchName
 - cd branchName
@@ -48,7 +61,7 @@
 - [disable Babel transpilation in parcel](https://parceljs.org/languages/javascript/)
 - [jest-environment-jsdom](https://jestjs.io/docs/next/tutorial-jquery)
 - [jest-dom](https://testing-library.com/docs/ecosystem-jest-dom/)
-
+- [file structure](https://legacy.reactjs.org/docs/faq-structure.html)
 
 
 

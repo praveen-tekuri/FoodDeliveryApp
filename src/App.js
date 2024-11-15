@@ -6,6 +6,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Error from './components/Error';
 import Footer from './components/Footer';
+import Restaurant from './components/RestaurantCard';
 
 export const AppLayout = () => {
     return (
@@ -15,6 +16,7 @@ export const AppLayout = () => {
                    <div className='px-5 min-h-[calc(100vh_-_128px)] '>
                         <Routes>
                             <Route path='/' element={<Home/>}/>
+                            <Route path='./rest' element={<Restaurant/>}/>
                             <Route path='/about' element={<About/>}/>
                             <Route path='*' element={<Error/>}/>
                         </Routes>
