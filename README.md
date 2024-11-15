@@ -19,7 +19,7 @@
 1. Displaying the restaurant cards with hardcoded data
     - props
     - destructuring
-    - optional chaining (?)
+    - optional chaining (?.)
     - concatenation (cloudinary img)
     - unique keys
 2. File Structure
@@ -35,6 +35,14 @@
     - filter (avgRating > 4.5)
         - useState hook
 5. diff & reconciliation algorithm, react fiber
+6. Microservices
+7. fetching the live data
+    - useEffect
+        - fetch
+    - conditional rendering
+    - loading
+    - shimmer UI
+    - ternary operator (? :)
 ### Commands
 - git clone branchName
 - cd branchName
