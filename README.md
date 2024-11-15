@@ -43,6 +43,8 @@
     - loading
     - shimmer UI
     - ternary operator (? :)
+8. Login -> Logout (useState)
+
 ### Commands
 - git clone branchName
 - cd branchName
