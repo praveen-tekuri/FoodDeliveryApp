@@ -53,7 +53,10 @@
     - Product API
     - useParams hook
     - Link
-
+### 16112024
+1.Optimization
+    - single responsibility
+    - customHook
 ### Commands
 - git clone branchName
 - cd branchName
