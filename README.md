@@ -66,7 +66,12 @@
         - display restaurant availability status on each card
     - display product categories
         - accordion
-        - categories filter 
+        - categories filter
+        - devtools
+        - state lifting: RestaurantCategory -> RestaurantMenu
+          - controlled and uncontrolled components
+          - RestaurantMenu will control the state of all RestaurantCategory
+        
 ### Commands
 - git clone branchName
 - cd branchName
