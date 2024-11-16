@@ -1,13 +1,17 @@
 import ReactDOM from 'react-dom/client';
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
-import About from './components/About';
+// import About from './components/About';
 import Error from './components/Error';
 import Footer from './components/Footer';
 import Restaurant from './components/RestaurantCard';
 import RestaurantMenu from './components/RestaurantMenu';
+// import Grocery from './components/Grocery';
+
+const Grocery = lazy(() => import('./components/Grocery')); // dynamic import
+const About = lazy(() => import('./components/About')); 
 
 export const AppLayout = () => {
     return (
@@ -18,7 +22,8 @@ export const AppLayout = () => {
                         <Routes>
                             <Route path='/' element={<Home/>}/>
                             <Route path='./rest' element={<Restaurant/>}/>
-                            <Route path='/about' element={<About/>}/>
+                            <Route path='/about' element={<Suspense fallback={<h1 className='my-3 text-2xl'>Loading...</h1>}><About/></Suspense>}/>
+                            <Route path='/grocery' element={<Suspense fallback={<h1 className='my-3 text-2xl'>Loading...</h1>}><Grocery/></Suspense>}/>
                             <Route path='/restaurants/:resId' element={<RestaurantMenu/>}/>
                             <Route path='*' element={<Error/>}/>
                         </Routes>

@@ -58,6 +58,9 @@
     - single responsibility
     - customHook -> useRestaurantMenu -> fetchData
     - customHook -> useOnlineStatus -> online status
+    - bundling/chunking/code splitting/lazy loading/on demand loading
+      - const CmpName = lazy(() => import("./components/CmpName")) // dynamic import
+      - <Suspense fallback={<h1>Loading...</h1>}><CmpName/></Suspense>
 ### Commands
 - git clone branchName
 - cd branchName
