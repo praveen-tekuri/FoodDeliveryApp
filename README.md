@@ -64,6 +64,9 @@
 2.Data is the new oil
     - higher order component
         - display restaurant availability status on each card
+    - display product categories
+        - accordion
+        - categories filter 
 ### Commands
 - git clone branchName
 - cd branchName
