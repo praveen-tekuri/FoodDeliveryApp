@@ -56,7 +56,8 @@
 ### 16112024
 1.Optimization
     - single responsibility
-    - customHook
+    - customHook -> useRestaurantMenu -> fetchData
+    - customHook -> useOnlineStatus -> online status
 ### Commands
 - git clone branchName
 - cd branchName
@@ -84,6 +85,6 @@
 - [jest-environment-jsdom](https://jestjs.io/docs/next/tutorial-jquery)
 - [jest-dom](https://testing-library.com/docs/ecosystem-jest-dom/)
 - [file structure](https://legacy.reactjs.org/docs/faq-structure.html)
-
+- [window online event](https://developer.mozilla.org/en-US/docs/Web/API/Window/online_event)
 
 

@@ -2,13 +2,15 @@ import React, { useEffect, useState } from 'react'
 import RestaurantCard from './RestaurantCard'
 import Shimmer from './Shimmer';
 import { Link } from 'react-router-dom';
+import useOnlineStaus from '../utils/useOnlineStatus';
 
 const Home = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
   const [filteredRestaurant, setFilteredRestaurant] = useState([]);
   const [searchText, setSearchText] = useState("");
-  
   console.log("Home rendered");
+  
+  const onlineStatus = useOnlineStaus();
   
   useEffect(() => {
       fetchData();
@@ -20,6 +22,8 @@ const Home = () => {
     setListOfRestaurants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     setFilteredRestaurant(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   }
+  
+  if(onlineStatus === false) return <h1 className='text-2xl font-bold my-3 text-red-500'>Looks like you're offline! Please check your internet connection.</h1>
   
   return listOfRestaurants.length === 0 ? <Shimmer/> : (
     <div className='body'>
