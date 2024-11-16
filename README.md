@@ -61,6 +61,9 @@
     - bundling/chunking/code splitting/lazy loading/on demand loading
       - const CmpName = lazy(() => import("./components/CmpName")) // dynamic import
       - <Suspense fallback={<h1>Loading...</h1>}><CmpName/></Suspense>
+2.Data is the new oil
+    - higher order component
+        - display restaurant availability status on each card
 ### Commands
 - git clone branchName
 - cd branchName

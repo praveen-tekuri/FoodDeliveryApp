@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import RestaurantCard from './RestaurantCard'
+import RestaurantCard, { withPromotedLabel } from './RestaurantCard'
 import Shimmer from './Shimmer';
 import { Link } from 'react-router-dom';
 import useOnlineStaus from '../utils/useOnlineStatus';
@@ -11,6 +11,8 @@ const Home = () => {
   console.log("Home rendered");
   
   const onlineStatus = useOnlineStaus();
+
+  const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
   
   useEffect(() => {
       fetchData();
@@ -48,7 +50,10 @@ const Home = () => {
         </div>
         <div className='res-container flex flex-wrap justify-between'>
           {filteredRestaurant.map((restuarant) => (
-            <Link key={restuarant?.info?.id} to={"/restaurants/" + restuarant.info.id}><RestaurantCard resData = {restuarant}/></Link>
+            <Link key={restuarant?.info?.id} to={"/restaurants/" + restuarant.info.id}>
+              {/* if the restaurant is opened then dispaly availability label */}
+                {restuarant?.info?.availability?.opened ? (<RestaurantCardPromoted resData = {restuarant}/>) : (<RestaurantCard resData = {restuarant}/>)}
+              </Link>
           ))}
         </div>
     </div>
