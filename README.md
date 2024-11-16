@@ -61,7 +61,7 @@
     - bundling/chunking/code splitting/lazy loading/on demand loading
       - const CmpName = lazy(() => import("./components/CmpName")) // dynamic import
       - <Suspense fallback={<h1>Loading...</h1>}><CmpName/></Suspense>
-2.Data is the new oil
+2.Data is the new oil (Data Layer & UI Layer)
     - higher order component
         - display restaurant availability status on each card
     - display product categories
@@ -71,7 +71,8 @@
         - state lifting: RestaurantCategory -> RestaurantMenu
           - controlled and uncontrolled components
           - RestaurantMenu will control the state of all RestaurantCategory
-        
+    - useContext
+        - UserContext.js (authentication)
 ### Commands
 - git clone branchName
 - cd branchName

@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import {Link} from 'react-router-dom';
 import useOnlineStaus from '../utils/useOnlineStatus';
+import UserContext from '../utils/userContext';
 
 const Header = () => {
     const [btnName, setBtnName] = useState("Login");
+    
     const onlineStatus = useOnlineStaus();
+
+    const {loggedInUser} = useContext(UserContext);
+
     return (
         <div className='bg-slate-200 p-5'>
             <nav className='flex justify-between'>
@@ -19,6 +24,7 @@ const Header = () => {
                     <li className='mx-2'><button onClick={() => {
                         btnName === "Login" ? setBtnName("Logout") : setBtnName("Login");
                     }} className='font-bold'>{btnName}</button></li>
+                    <li className='mx-2 font-bold'>{loggedInUser}</li>
                 </ul>
             </nav>
         </div>
