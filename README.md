@@ -82,7 +82,8 @@
       - Slice(cartSlice) (`createSlice({})`)
       - Selector(subscribing to the store) (`useSelector`)
       - Dispatch(action)(`useDispatch`)
-    
+2. Unit Testing
+    - Contact Us page
 ### Commands
 - git clone branchName
 - cd branchName
