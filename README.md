@@ -73,6 +73,16 @@
           - RestaurantMenu will control the state of all RestaurantCategory
     - useContext
         - UserContext.js (authentication)
+### 18112024
+1. Redux Store
+    - Redux toolkit
+      - Install @reduxjs/toolkit and react-redux
+      - Build our store (`configureStore({})`)
+      - Connect our store to our app (`<Provider>`)
+      - Slice(cartSlice) (`createSlice({})`)
+      - Selector(subscribing to the store) (`useSelector`)
+      - Dispatch(action)(`useDispatch`)
+    
 ### Commands
 - git clone branchName
 - cd branchName
@@ -90,6 +100,7 @@
 - npm i -D jest-environment-jsdom
 - npm i -D @testing-library/jest-dom
 - npm i react-router-dom
+- npm i @reduxjs/toolkit react-redux 
 ### Sources
 **Testing**
 - [tailwindCSS](https://tailwindcss.com/docs/guides/parcel)

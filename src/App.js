@@ -9,6 +9,9 @@ import Footer from './components/Footer';
 import Restaurant from './components/RestaurantCard';
 import RestaurantMenu from './components/RestaurantMenu';
 import UserContext from './utils/userContext';
+import { Provider } from 'react-redux';
+import appStore from './utils/appStore';
+import Cart from './components/Cart';
 // import Grocery from './components/Grocery';
 
 const Grocery = lazy(() => import('./components/Grocery')); // dynamic import
@@ -25,24 +28,27 @@ export const AppLayout = () => {
     },[])
 
     return (
-        <UserContext.Provider value={{loggedInUser: userName}}>
-                <div>
-                    <BrowserRouter>
-                        <Header/>
-                        <div className='px-5 min-h-[calc(100vh_-_128px)] '>
-                                <Routes>
-                                    <Route path='/' element={<Home/>}/>
-                                    <Route path='./rest' element={<Restaurant/>}/>
-                                    <Route path='/about' element={<Suspense fallback={<h1 className='my-3 text-2xl'>Loading...</h1>}><About/></Suspense>}/>
-                                    <Route path='/grocery' element={<Suspense fallback={<h1 className='my-3 text-2xl'>Loading...</h1>}><Grocery/></Suspense>}/>
-                                    <Route path='/restaurants/:resId' element={<RestaurantMenu/>}/>
-                                    <Route path='*' element={<Error/>}/>
-                                </Routes>
-                        </div>
-                        <Footer/>
-                    </BrowserRouter>
-            </div>
-        </UserContext.Provider>
+        <Provider store={appStore}>
+            <UserContext.Provider value={{loggedInUser: userName}}>
+                    <div>
+                        <BrowserRouter>
+                            <Header/>
+                            <div className='px-5 min-h-[calc(100vh_-_128px)] '>
+                                    <Routes>
+                                        <Route path='/' element={<Home/>}/>
+                                        <Route path='./rest' element={<Restaurant/>}/>
+                                        <Route path='/about' element={<Suspense fallback={<h1 className='my-3 text-2xl'>Loading...</h1>}><About/></Suspense>}/>
+                                        <Route path='/grocery' element={<Suspense fallback={<h1 className='my-3 text-2xl'>Loading...</h1>}><Grocery/></Suspense>}/>
+                                        <Route path='/restaurants/:resId' element={<RestaurantMenu/>}/>
+                                        <Route path='/cart' element={<Cart/>}/>
+                                        <Route path='*' element={<Error/>}/>
+                                    </Routes>
+                            </div>
+                            <Footer/>
+                        </BrowserRouter>
+                </div>
+            </UserContext.Provider>
+        </Provider>
     )
 }
 
