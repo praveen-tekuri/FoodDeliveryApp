@@ -12,6 +12,7 @@ import UserContext from './utils/userContext';
 import { Provider } from 'react-redux';
 import appStore from './utils/appStore';
 import Cart from './components/Cart';
+import Contact from './components/Contact';
 // import Grocery from './components/Grocery';
 
 const Grocery = lazy(() => import('./components/Grocery')); // dynamic import
@@ -41,6 +42,7 @@ export const AppLayout = () => {
                                         <Route path='/grocery' element={<Suspense fallback={<h1 className='my-3 text-2xl'>Loading...</h1>}><Grocery/></Suspense>}/>
                                         <Route path='/restaurants/:resId' element={<RestaurantMenu/>}/>
                                         <Route path='/cart' element={<Cart/>}/>
+                                        <Route path='/contact' element={<Contact/>}/>
                                         <Route path='*' element={<Error/>}/>
                                     </Routes>
                             </div>
