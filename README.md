@@ -84,6 +84,7 @@
       - Dispatch(action)(`useDispatch`)
 2. Unit Testing
     - Contact Us page
+    - Header Component
 ### Commands
 - git clone branchName
 - cd branchName
