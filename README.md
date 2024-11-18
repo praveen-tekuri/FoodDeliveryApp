@@ -85,6 +85,9 @@
 2. Unit Testing
     - Contact Us page
     - Header Component
+    - RestaurantCard Component
+        - Mock Data
+        - props
 ### Commands
 - git clone branchName
 - cd branchName
